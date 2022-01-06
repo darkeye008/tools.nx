@@ -1,0 +1,2 @@
+# tools.nx
+open
