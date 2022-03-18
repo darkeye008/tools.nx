@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<html lang="en" dir="ltr">
-
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
@@ -22,7 +22,7 @@ body{
   font-family: sans-serif;
   overflow: hidden;
   user-select: none;
-  background-color:;
+  background-color:#f032e6;
   background-image: url('74898.gif');
   max-height: 100%;
   min-height: 100vh;
@@ -32,20 +32,11 @@ body{
   padding: 0;
 }
 
-video{
-   width: 40px;
-   margin-left: 200px;
-   padding : 0; 
-
-}
-
-
-
 nav{
+  padding: 0 20px;
   height: 70px;
   background: 
-  padding: 20px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  box-shadow: 0 5px 10px rgba(0,0,0,.4);
   border-radius: 22px;
 }
 nav ul{
@@ -55,15 +46,16 @@ nav ul{
 }
 nav ul li{
   display: inline-block;
+  padding: ;
 }
 nav ul li a{
   color: white;
   display: block;
-  padding: 0 30px;
-  line-height: 37px;
+  padding: 0 40px;
+  line-height: 30px;
   font-size: 20px;
   background: 
-  transition: .5s;
+  transition: .9s;
   border: 1px solid skyblue;
   border-radius:22px;
   top: 5px;
@@ -71,27 +63,27 @@ nav ul li a{
 nav ul li a:hover,
 nav ul li a.active{
   color: #23dbdb;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 nav ul ul{
   position: absolute;
-  top: 105px;
+  top: 120px;
   border-top: 1px solid #23dbdb;
   opacity: 0;
   visibility: hidden;
-  border-radius: 22px
-  padding: 10px;
+  border-radius: 22px;
+  padding: 15px;
 }
 nav ul li:hover > ul{
-  top: 70px;
+  top: 109px;
   opacity: 1;
   visibility: visible;
-  transition: .5s linear;
-  border-radius: 10px;
+  transition: .3s linear;
+  border-radius: 15px;
   padding: 10px;
 }
 nav ul ul li{
-  width: 150px;
+  width: 180px;
   padding:
   display: list-item;
   position: relative;
@@ -99,12 +91,22 @@ nav ul ul li{
   border-top: none;
   border-radius: 22px;
 }
+
 nav ul ul li a{
-  line-height: 40px;
+  line-height: 20px;
   padding: 0 20px;
 }
 nav ul ul ul{
   border-top: none;
+  padding: 0;
+ margin-left: 
+ 
+}
+nav ul ul ul{
+  border-top: none;
+  padding: 0;
+ margin-left: 
+ 
 }
 nav ul ul ul li{
   position: relative;
@@ -124,68 +126,106 @@ section{
   background-size: cover;
   height: 100vh;
 }
+ 
+ 
+ 
+pre{
+          border: ;
+          background: ;
+          color: white;
+          fornt-family:
+          
+          animation-name: example;
+          animation-duration: 2s;
+          animation-iteration-count:infinite ;
+       }
+       
+       @keyframes example {
+  from {background-color:green;}
+  to {background-color:red;}
+}
+
+  pre{animation-name:rainbow;
+    animation-duration:3s;}
+
+   @keyframes rainbow {
+    from {color: yellow;}
+    to{color: white;}
+}
+
+   pre{text-align:center;
+     padding-top:10px;
+     color: yellow;}
         
-    h3{
-    color: #8A2BE2;
-    font-size: 20px;
+ 
+ 
+ 
+  pre{
+    color: white;
+    padding: 0px;
+    position : absolute;
+    display: black;
+  
+  }
+  
+  
+  img{
+       margin-left: 135px;
+    
+  
+  }
+  
+   
+   video{
+     width: 40px;
+     margin-left: 240px;
+     padding: 0;
+     
+   
+   }
+   
+   
+   
+   
+   h1{
+    position:relative ;
+    font-size:20px;
+    color: black;
+    -webkit-text-stroke:0.3vw black;
+    text-transform:uppercase ;
+}
+h1::before{
+    content:attr(data-text);
+    position:absolute ;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    color:#01fe87;
+    -webkit-text-stroke:0vw #383d52;
+    border-right:2px solid #01fe87;
+    overflow:hidden ;
+    animation:animate 6s linear infinite ;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
     }
-        h5{
-        color: green;
-        
-        
-        }
-        
-        h4{
-        color: skyblue;
-        
-        }
-        
-        
-       h1 {
-  position: relative;
-  color: black;
-  font-size: 30px;
-  letter-spacing: 1px;
-  border-bottom: 5px solid black;
-  line-height: 1.4;
-  font-family: Console;
-}
-h1::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-decoration: 
-  width: 100%;
-  color: #30FF00;
-  border-bottom: 5px solid #30FF00;
-  animation: lod 8s linear infinite;
-  overflow: hidden;
-}
-@keyframes lod {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-} 
+    70%,90%{
+        width:100%;
+    }
+}     
+
 img{
   width: 100px;
   padding: 0;
 
 }
 
-header {
-
-color: ;
-background-image: url('');
-background-color: #30FF00;
-padding: 5px 0;
-text-align:center;
-
+li a{
+  padding:0px;
 }
-    .photo {
+.photo {
 
 width:40px;
 display: inline-block;
@@ -202,60 +242,73 @@ margin-right: 20px;
 padding: 0px;
 
 }
+p {
+
+margin: 0 0 5px 0;
+font-size: 15px;
+color: white;
+}
+        
       </style>
    </head>
-  <header>
-  <h4 style="color: white">𝑁𝑒𝑤 𝑋𝑝𝑙𝑜𝑟𝑒𝑟</h4>
-  </header>
-   <body>
+     <body>
+
+<pre>            <a style="color: white" href="index.html">        -DARK EYE-  </a></pre>
+<br><br><br>
       <nav>
-        
-         <ul>
- <li><a class="active" href="#">𝐌𝐞𝐧𝐮
-               <i class="fas fa-caret-down"></i></a>
-            <ul>
-            
-       <li><a style="color: #7FFF00" href="https://t.me/joinchat/hA-M94AZKhxlZDVl">𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖</a></li>
-           
-             <li><a style="color: red" href="https://youtube.com/channel/UCyOphFQXYU1ZGW5DvW4VT2Q">𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥</a></li>
-              
-               </ul>
-            </li>
       
+   
+   <ul>
             <li>
-               <a href="#">𝐓𝐎𝐎𝐋
+               <a href="#"> MENU 
                <i class="fas fa-caret-down"></i>
                </a>
                <ul>
-          <li><a style="color: " href="like.html">𝐅𝐁 𝐋𝐢𝐤𝐞</a></li>
-            <li><a style="color: " href="telbot.html">𝐓𝐞𝐥𝐞𝐠: 𝐁𝐨𝐭</a></li>
-             <li><a style="color: red" href="hacksignal.html">Signal Tool</a></li>
-                <li><a style="color: " href="#">Watch video</a></li>
-                
-                <li><a style="color: " href="coin-Bird.html">Coin-Bird</a></li>
-                 <li><a style="color: " href="https://www.facebook.com/groups/2029463423875403/?ref=share">Facebook</a></li>
-                  
+    <li><a style="color:#30FF00" href="https://www.learntermux.tech/?m=1">>_Termux</a>
+
+</li>
+          <li><a style="color:#30FF00"href="#">🐉 Kali Linux</a></li>
+                  <li>
+                     <a style="color:red" href="https://www.facebook.com/groups/1069319973611588/?ref=share">Tutorial Video
+                     <i class="fas fa-caret-right"></i>
+                     </a>
+
+                  </li>
                </ul>
             </li>
+           
+           <li>
+               <a href="#"> TOOLS
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+               <li><a href="like.html"> 𝙵𝙱 𝙻𝚒𝚔𝚎</a></li>
         
+            <li><a style="color: white" href="https://t.me/+hA-M94AZKhxlZDVl">Paid [website]</a></a></li>
+                  <li><a href="https://t.me/joinchat/iJM3riwN2w4zOTg1">watch video</a>  </a></li>
+      <li><a href="https://t.me/+cwMjOfDA880xZTQ1">Telegram bot</a></li>
+      <li><a href="https://t.me/+cwMjOfDA880xZTQ1">Coin-Bird</a></li>
+      <li><a href="Binomo.html">Binomo</a></li>
+        <li><a href="https://t.me/+cwMjOfDA880xZTQ1">iq option</a></li>
+        
+   </ul>
+   
+               
+            </li>
+           
+           
+         </ul>
+
+            </li>
       </nav>
-      <br>
-            <br>
-                  <br>
-              <br>          <br>
-     
-      <br><br>
- <br><br><br><br> <br><br>
-      <br><br>
-      <br> <br><br>
-      <br>
-      <br>
-      <br>
-       <h1 data-text="Hacking">Hacking</h1>
-          <div class="photo">
+      
+          <div>
+    <br />
+    </pre>
+    <br><br>   <br><br>   <br><br>
+       <br><br>   <br><br>   <br><br>   <br><br>   <br><br><br>
+   <div class="photo">
     <a href="https://t.me/Eyey3"><img src="admin.gif"/></a> </div>
     <div class="photo">
     <a href="https://t.me/Eyey3"><img src="djhvhuvvfub.png"/></a></div>
-    <p style="color: white">&copy; copy right 2022</p>
-   </body>
-</html>
+    <p>&copy; copy right 2022</p>
