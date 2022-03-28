@@ -1,0 +1,249 @@
+<!-- Created by Pulkit -->
+
+<!-- Created by Brain & Bones -->
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>payment|page</title>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>hi
+    </body>
+    <style>
+        /* Created by Pulkit */
+
+/* Created by Brain & Bones */
+
+body {
+    margin: 0;
+    position: fixed;
+    background-color: black;
+}
+canvas{
+    position: fixed;
+    top: 25vh;
+}
+        
+    </style>
+    <script>
+        // Created by Pulkit
+
+// Created by Brain & Bones
+
+onload = function (){
+    c = canvas.getContext('2d');
+    canvas.width = W = innerWidth;
+    canvas.height = H = innerHeight/2;
+    var y, x = 0, t = t2 = -1.6, x2, y2, xSave;
+    c.lineWidth = 1;
+    c.strokeStyle = "red";
+    c.fillStyle = "rgba(0,0,0,.02)"
+    var heart = false;
+    function draw(){
+        c.fillRect(0, 0, canvas.width, canvas.height);
+        c.save();
+        c.translate(0, H/2);
+        c.beginPath();
+        if(heart == false){
+            c.moveTo(x,y);
+            x+=1.7;
+            y = 2/Math.sin(x);
+            c.lineTo(x,y);
+        }
+        else{
+            c.moveTo(x,y);
+            x = (32 * (Math.sin(t))**3) * 3 + xSave; 
+            y = (21 * Math.cos(t) - 5 * Math.cos(2*t) - 2 * Math.cos(3*t) - Math.cos(4*t)) * -3;
+            c.lineTo(x,y);
+            c.moveTo(x2,y2);
+            x2 = (32 * (Math.sin(t2))**3) * 3 + xSave; 
+            y2 = (21 * Math.cos(t2) - 5 * Math.cos(2*t2) - 2 * Math.cos(3*t2) - Math.cos(4*t2)) * -3;
+            c.lineTo(x2,y2);
+            if(t<1.7){
+               t+=.1; 
+               t2-=.1;
+            }else{
+                heart = false;
+            }
+        }
+        if(x > W/4 && x < W/2 && heart == false){
+            heart = true;
+            xSave = x * 2;
+            x2 = x;
+            y2 = y;
+            t = t2 = -1.6;
+        }
+        c.stroke();
+        c.restore();
+        requestAnimationFrame(draw);
+          if(x > W){
+              x = 0;
+          }
+    }
+    requestAnimationFrame(draw);
+}
+    </script>
+</html>
+<style>
+  *{
+
+  margin: 0;
+
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select: none;
+  background-color:;
+  background-image: url('');
+  max-height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-eapeat;
+  position: fexid;
+  padding: 0;
+}
+p{
+  color: white;
+}
+h1{
+  color: white;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  border: 2px solid skyblue;
+  border-radius: 22px;
+}
+h2{
+  color: white;
+}
+a{
+  color: white;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+
+  border: 2px solid skyblue;
+
+  border-radius: 22px;
+}
+.heart{
+
+  width:50px;
+
+  height:50px;
+  text-align:center;
+  display:flex;
+  align-items:center ;
+  justify-content:center;
+  text-transform: uppercase;
+  transform: rotate(1deg);
+  text-decoration:none;
+  position: absolute;
+  margin: auto;
+  text-align:center; 
+  opacity:0.3;
+  border-radius: 10px;
+  left: 100px;
+  top: 1170px;
+  z-index:-9;
+ }
+ #heartt {
+  width: 40px;
+  height: 40px;
+  background-color: cyan;
+  position:absolute  ;
+  transform:translate(-50%, -50%) rotate(45deg);
+  animation:move 2s linear,
+  clr 3s linear,
+  rot 2s linear ;
+ 
+}
+#heartt::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: cyan;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transform-style:preserve-3d;
+}
+#heartt::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color:cyan;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  transform-style:preserve-3d;
+}
+@keyframes move{
+    100%{
+        top:0;
+        height:60px;
+        width:60px;
+        opacity:0.4;
+    }
+}
+@keyframes clr{
+    0%{
+        filter:hue-rotate(0deg);
+        
+    }
+    100%{
+        filter:hue-rotate(1200deg);
+        
+    }
+}
+  
+</style>
+<script>
+  var heart = function(){
+    var s = document.createElement('div');
+    s.setAttribute('id','heartt'),
+    document.body.appendChild(s),
+    s.style.top = event.pageY + 'px',
+    s.style.left = event.pageX + 'px',
+    setTimeout(function(){
+        document.body.removeChild(s)
+    },2000)
+};
+document.addEventListener('click',heart);
+
+  
+</script>
+<body>
+  <p>* bKash payment system on ৳</p>
+  <br> <br>
+  <pre><h1>  bKash : 01759713057 </h1></pre>
+  <br> 
+
+  <br><br>
+  <h2> please copy on this number and send money  </h2>
+  <br>
+  <h2> are you successfully send money copy on txnID and SEND </h2>
+  <h2> confirm on payment your history Your TOOLS is ready enjoy Hacker 🐉🐉</h2>
+  
+      <br> <br>
+            <br> <br>
+      <br> <br>
+
+        <pre>                  <a href="https://t.me/Eyey3"> SEND Money </a></pre>
+      <br> <br>
+      <br> <br>
+      
+ 
+
+     <p>&copy; copy right 2022</p>
+</body>
